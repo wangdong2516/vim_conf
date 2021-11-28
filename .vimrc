@@ -56,8 +56,20 @@ set ignorecase
 set spell spelllang=en_us
 
 "保留撤销历史
-# set undofile
+"set undofile"
 
 "出错的时候屏幕闪烁
 set visualbell
+"设置搜索的时候智能大小写
+set smartcase
+
+"vim-plug插件管理
+call plug#begin('~/.vim/plugged')
+Plug 'vim-airline/vim-airline'
+Plug 'morhetz/gruvbox'
+Plug 'rakr/vim-one'
+call plug#end()
+set background=dark
+colorscheme one
+set background=dark " for the dark version
 
